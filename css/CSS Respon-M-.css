@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    --color-dark: #3d3218;
+    --color-1: #866D36;
+    --color-2: #b29c64;
+    --color-3: #B79951;
+    --color-4: #C5AA5F;
+    --color-5: #c9ba94;
+    --color-6: #e4ddcb;
+    --color-7: #fef6e3;
+}
+
+
+
+/* ----------------------------  تصميم الشاشة المتوسطة  */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 970px;
+    }
+
+    .About-us .content p {
+        padding: 0 0 10px;
+        font-size: 18px;
+
+    }
+
+    /* -----------------------------------------------------خدماتنا القانونية */
+    .Services {
+        padding: 30px 15px;
+
+    }
+
+    .Services .box-Services h1 {
+        font-size: 35px;
+        padding: 15px;
+
+    }
+
+    .Services .box-Services .the-box {
+        width: 30%;
+        padding: 0;
+        margin: 0 0 15px 15px;
+        box-shadow: -5px 5px 8px var(--color-dark);
+    }
+
+/* --------------------------------------التعريف بالشركة */
+.about-us2 .box p {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

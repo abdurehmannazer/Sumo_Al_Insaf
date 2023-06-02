@@ -1,0 +1,537 @@
+* {
+    box-sizing: border-box;
+    --color-dark: #3d3218;
+    --color-1: #866D36;
+    --color-2: #b29c64;
+    --color-3: #B79951;
+    --color-4: #C5AA5F;
+    --color-5: #c9ba94;
+    --color-6: #e4ddcb;
+    --color-7: #fef6e3;
+}
+
+/* ----------------------------  تصميم الشاشة الصغيرة جداً */
+@media (max-width: 767px) {
+
+
+
+
+/* -----------------------------لوجو بوكس */
+    .logo-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed !important;
+        top: 0 !important;
+        width: 100%;
+        z-index: 10000;
+        transition: 0.3s;
+    }
+    .logo-box img {
+        margin: 0 0;
+        padding-right: 10px;
+        max-height: 150px;
+        width: 300px ;
+        z-index: 2;
+        flex: 1;
+    }
+    .logo-box .icon {
+        color: white;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-left: 20px;
+        padding-top: 10px;
+        flex: 1;
+        text-align: end;
+        height: 80px;
+        transition: 0.5s;
+    }
+    .logo-box .icon i {
+        font-size: 30px;
+        color: var(--color-4);
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+/* -----------------------------بار بوكس */
+    .bar-box {
+        display: flex ;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: var(--color-dark);
+        position: fixed;
+        top:    81px !important ;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 99999;
+        margin-top: -0px;
+    }
+    .bar-box a {
+        font-size: 18px;
+        width: 70%;
+        border-bottom: 1px solid var(--color-7);
+        padding: 0 0 5px;
+        margin-top: 0;
+        }
+    .bar-box a:first-child {
+        margin-top: 40px;
+        }
+    .bar-box a:hover {
+        color: var(--color-5);
+        font-weight: bold;
+        }
+    .bar-box .social-icone {
+        display: block ;
+        width: 80%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .bar-box .social-icone a {
+        border: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        }
+    .bar-box .social-icone i {
+        color: var(--color-4);
+        font-size: 30px;
+    }
+    .bar-box .iconX {
+            display: block;
+            margin-bottom: 100px;
+            font-size: 35px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+    .bar-box .iconX a {
+                text-decoration: none;
+                color: var(--color-dark);
+                background-color: var(--color-4);
+                width: fit-content;
+                margin: 0 auto;
+                text-align: center;
+                padding: 10px 25px;
+                border-radius: 6px;
+    }
+
+
+/* ------------------------------------الترحيب */
+    .nav-bar .wellcome-page h1 {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .nav-bar .wellcome-page span {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+    .nav-bar .wellcome-page p {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------التعريف بالشركة */
+
+
+
+
+
+
+    .about-us2 .about-boxes {
+        flex-direction: column;
+
+
+    }
+    .about-us2 .box p {
+        font-size: 16px;
+    }
+
+    .about-us2 .box1 {
+    width: 100%;
+    margin-bottom: 5px;
+    }
+    .about-us2 .box2 {
+    width: 100%;
+    }
+    .about-us2 .box2 h2 {
+    text-align: center;
+    }   
+    .about-us2 .iconBox {
+    text-align: center;
+    }
+    .about-us2 .iconBox i:first-child {
+        margin: 0 0 0 0;
+    }
+    .about-us2 .box:hover {
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+    /* -----------------------------------خدماتنا القانونية */
+
+.Services{
+    padding: 15px 15px;
+
+}
+.Services .box-Services {
+    flex-direction: column;
+}
+.Services .box-Services h1 {
+    font-size: 35px ;
+    padding: 15px;
+
+}
+.Services .box-Services .the-box {
+    width: 350px;
+    padding: 0;
+    margin: 0 0 15px ;
+    box-shadow: -5px 5px 8px var(--color-dark);
+}
+
+
+
+/* ---------------------------------------------------حجز موعد */
+
+.request-appointment {
+    padding: 0;
+    height: 1500px;
+}
+
+.request-appointment .box-appointment {
+    position:absolute;
+    top: 150px;
+}
+.request-appointment .box-appointment .box {
+    position: relative;
+    margin: 0 20px 10px;
+    box-shadow: 0px 0px 5px #717171;
+}
+.request-appointment .box-appointment .box:hover {
+    transform: translateY(0);
+}
+
+.request-appointment .box-appointment .box .img img {
+    width: 300px;
+    height: 400px;
+}
+.request-appointment .box-appointment .box .txt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    width: 350px;
+    border-radius: 40px;
+    background-color: var(--color-dark);
+    box-shadow: 0px 0px 5px var(--color-dark);
+    width: 250px;
+    height: 50px;
+
+}
+
+.request-appointment .box-appointment .box .txt a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 17px;
+    width: fit-content;
+    margin: 0px 0px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 5px;
+
+}
+
+.request-appointment .box-appointment .box .txt:hover {
+    box-shadow: 0px 0px 10px var(--color-dark);
+
+}
+
+.request-appointment .box-appointment .box .txt i {
+    color: white;
+    background-color: var(--color-2);
+    padding: 0 0;
+    border-radius: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    width: 100px;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 0px 5px var(--color-dark);
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.request-appointment .box-txt {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 25px;
+    padding: 10px 0px;
+    text-align: center;
+    color: var(--color-dark);
+    border-bottom: 0px solid #6b5624;
+}
+.request-appointment .box-txt h2 {
+    font-size: 24px;
+
+}
+.request-appointment .box-txt P {
+    font-size: 18px;
+
+}
+
+
+/* ------------------------------ فريق الإدارة */
+.our-team {
+    padding: 0;
+    height: 1900px;
+}
+.our-team .left-line {
+    width: 15px;
+}
+.our-team .box-team {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.our-team .box-team .employee-box {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 10px solid var(--color-1);
+}
+.our-team .last-txt {
+    position: absolute;
+    top: 0;                                                                                
+    left: 0;
+    padding: 25px 15px 25px 35px;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    }
+.our-team .last-txt p {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* ----------------------------------- العملاء والاحصائيات */
+.Our-client {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 0 ;
+}
+.Our-client .box-client {
+    padding: 0 5px;
+}
+.Our-client .box-client .client {
+    width: 80%;
+    height: 70%;
+}
+.box-client #prev,
+.box-client #next {
+    bottom: 150px;
+    font-size: 25px;
+}
+#prev {
+    right: 5%;
+}
+
+#next {
+    left: 5%;
+}
+.dot {
+    width: 1rem;
+    height: 1rem;
+    margin: 2px;
+
+}
+
+
+
+
+
+
+.Our-client .h2 {
+    top: 700px;   
+}
+.Our-client .box-statistic {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    transform: translate(0,0);
+    flex-wrap: wrap;
+    /* background-color: #3d3218; */
+    height: 400px;
+
+}
+.Our-client .box-statistic::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 4px;
+    background-color: var(--color-1);
+}
+.Our-client .box-statistic::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 85%;
+    background-color: var(--color-1);
+}
+.Our-client .box-statistic .count {
+    width: 40%;
+    border: 0px solid;
+}
+
+
+
+
+/* ----------------------------------------اخبار المكتب */
+.news {
+    padding: 0;
+    margin: 0;
+    height: 1220px;
+}
+.news h2 {
+    top: 50px;
+}
+.news .box-news {
+    position: absolute;    
+    top: 150px;
+    left: 0;
+    transform: translateY(0);
+
+}
+
+.Footer {
+    height: 100vh;
+}
+.Footer .BG {
+    height: 100%;
+}
+.Footer .box-cards {
+    position: absolute;
+    top: 10px;
+    transform: translateY(0);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0px;
+}
+.Footer .card {
+    height: 250px;
+
+}
+.Footer .information .img {
+    display: none;
+
+}
+.Footer .information p {
+    padding: 40px 15px 30px;
+}
+.Footer .contact .img {
+    display: none;
+}
+.Footer .contact h2 {
+
+}
+
+.Footer .Location .img,
+.Footer .Location .img2
+{
+    display: none;
+}
+.Footer .Location h2 {
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.Footer .rights {
+    color: white;
+    width: 100%;
+    font-size: 10px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+
+* {
+    box-sizing: border-box;
+    --color-dark: #3d3218;
+    --color-1: #866D36;
+    --color-2: #b29c64;
+    --color-3: #B79951;
+    --color-4: #C5AA5F;
+    --color-5: #c9ba94;
+    --color-6: #e4ddcb;
+    --color-7: #fef6e3;
+}
+
+
+
+
+
+
+/* ----------------------------  تصميم الشاشة الكبيرة  */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+
+    }
+}
