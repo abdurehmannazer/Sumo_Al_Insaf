@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/CSS.css">
-    <link rel="stylesheet" href="/css/CSS Respon-S-.css">
-    <link rel="stylesheet" href="/css/CSS Respon-M-.css">
-    <link rel="stylesheet" href="/css/CSS Respon-L-.css">
-    <link rel="stylesheet" href="/css/CSS Respon-XS-.css">
-    <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../css/CSS.css">
+    <link rel="stylesheet" href="../css/CSS Respon-S-.css">
+    <link rel="stylesheet" href="../css/CSS Respon-M-.css">
+    <link rel="stylesheet" href="../css/CSS Respon-L-.css">
+    <link rel="stylesheet" href="../css/CSS Respon-XS-.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,51 +30,37 @@
             top: 0;
             z-index: 100000000;
         }
-
         .logo-box {
             height: 150px !important;
         }
-
         .logo-box a {
             height: 100% !important;
             padding: 0;
             margin: 0;
         }
-
         .logo-box img {
             max-width: 100% !important;
         }
-
-
-
-
-
         @media (max-width: 767px) {
-
             .nav-bar,
             .logo-box,
             .logo-box a {
                 height: 82px !important;
             }
-
             .logo-box a {
                 display: block;
                 margin: auto;
             }
-
             .title {
                 display: block;
                 margin-top: 100px;
             }
-
             .title h1 {
                 font-size: 16px !important;
             }
-
             .title span {
                 font-size: 24px !important;
             }
-
             .title p {
                 font-size: 16px !important;
             }
@@ -81,29 +68,22 @@
             margin-top: 82px !important;
         }
         }
-
-
-
         .title {
             display: block;
             margin-top: 170px;
         }
-
         .title h1 {
             color: #3d3218;
             text-align: center;
             font-size: 27px;
             font-weight: bold;
             margin: 0;
-
         }
-
         .title span {
             color: #3d3218;
             text-align: center;
             font-size: 45px;
         }
-
         .title p {
             color: #3d3218;
             text-align: center;
@@ -112,7 +92,6 @@
             padding-top: 10px;
             margin: 0;
         }
-
         button {
             margin: 10px auto;
             display: block;
@@ -126,13 +105,9 @@
             border: none;
             transition: 0.3s;
         }
-
         button:hover {
             transform: scale(1.05);
             box-shadow: 0px 0px 7px 5px #866d36;
-
-
-
         }
         .Our-client {
             margin-top: 200px;
@@ -146,8 +121,8 @@
         <!-- <div class="overlay"></div> -->
         <div class="nav-bar item position-relative">
             <div class="logo-box">
-                <a href="/index.html">
-                    <img src="/images/logo-en.png" alt="">
+                <a href="../index.html">
+                    <img src="../images/logo-en.png" alt="">
                 </a>
             </div>
         </div>
@@ -161,34 +136,51 @@
 
 
     <div class="box-client">
-        <div class="client"><img src="/images/195px-Saudi_Aramco_logo.png" alt=""></div>
-        <div class="client"><img src="/images/195px-SABIC_Logo_RGB.png" alt=""></div>
-        <div class="client"><img src="/images/Al_Rajhi_Bank_Logo.png" alt=""></div>
-        <div class="client"><img src="/images/Saudi_National_Bank_Logo.svg.png" alt=""></div>
-        <div class="client"><img src="/images/Albaik.png" alt=""></div>
-        <div class="client"><img src="/images/420px-الخطوط_السعودية.svg.png" alt=""></div>
+        <div class="client"><img src="../images/195px-Saudi_Aramco_logo.png" alt=""></div>
+        <div class="client"><img src="../images/195px-SABIC_Logo_RGB-removebg-preview.png" alt=""></div>
+        <div class="client"><img src="../images/Al_Rajhi_Bank_Logo.png" alt=""></div>
+        <div class="client"><img src="../images/Saudi_National_Bank_Logo.svg.png" alt=""></div>
+        <div class="client"><img src="../images/Albaik.png" alt=""></div>
+        <div class="client"><img src="../images/420px-الخطوط_السعودية.svg.png" alt=""></div>
+
+
+        <i id="prev" onclick="show_image(-1)" class="fa-solid fa-right-long"></i>
+        <i id="next" onclick="show_image(1)" class="fa-solid fa-left-long"></i>
+
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
     </div>
+
+
+
 
     <h2>عملاؤنا</h2>
 
-    <h2 class="h2">الاحصائيات</h2>
+    <!-- <h2 class="h2">الاحصائيات</h2>
     <div class="box-statistic">
-
-        <div class="count client" data-countclient="300"><span>300</span> العملاء </div>
-        <div class="count company" data-countcompany="90"><span>90</span> الشركات </div>
-        <div class="count consultation" data-consultation="3594"><span>300</span> الاستشارات </div>
-        <div class="count issue" data-issue="599"><span>1955</span> القضايا </div>
-
-
-    </div>
-
-
     
-</div>    
+        <div class="count client" data-countclient="300"><span>300</span> العملاء </div>
+        <div class="count company" data-countcompany="90"><span>90</span>  الشركات </div>
+        <div class="count consultation" data-consultation="3594"><span>300</span> الاستشارات  </div>
+        <div class="count issue" data-issue="599"><span>1955</span> القضايا </div>
+    
+    
+    </div> -->
+
+
+</div>
 
 
 
-    <a href="/index.html" style="text-decoration: none;">
+    <a href="../index.html" style="text-decoration: none;">
     
         <button>
     
@@ -218,7 +210,7 @@
         <div class="box-cards">
 
             <div class="card information">
-                <div class="img"><img src="/images/logo2.png" alt=""></div>
+                <div class="img"><img src="../images/logo2.png" alt=""></div>
                 <p>شركة سمو الإنصاف أفضل وأكبر مكتب ومنصة محاماة دولية ومحلية معتمدة في العالم وتقدم استشارات قانونية
                     مجانية
                     للشركات والأفراد.</p>
@@ -231,7 +223,7 @@
             </div>
 
             <div class="card contact">
-                <div class="img"><img src="/images/chat.png" alt=""></div>
+                <div class="img"><img src="../images/chat.png" alt=""></div>
                 <h2>التواصل</h2>
                 <a href="tel:+966-509997635" class="phone"><i class="fa-solid fa-phone-volume"></i>
                     <h4>اتصل بنا</h4>
@@ -246,7 +238,7 @@
             </div>
 
             <div class="card Location">
-                <div class="img2"><img src="/images/map.png" alt=""></div>
+                <div class="img2"><img src="../images/map.png" alt=""></div>
                 <h2>العنوان</h2>
                 <p>المملكة العربية السعودية <br>
                     مدينة الرياض - حي عرقة <br>
@@ -255,8 +247,6 @@
                     href="https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D8%B3%D9%85%D9%88+%D8%A7%D9%84%D8%A5%D9%86%D8%B5%D8%A7%D9%81+%D9%84%D9%84%D9%85%D8%AD%D8%A7%D9%85%D8%A7%D8%A9+%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA+%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%E2%80%AD/@24.6934588,46.5959749,17z/data=!3m1!4b1!4m5!3m4!1s0x3e2f1d9e3ff313f3:0x35352505893ebcb0!8m2!3d24.6934588!4d46.5985552">اضغط
                     لفتح الاتجاهات</a>
             </div>
-
-
         </div>
 
 
@@ -265,15 +255,27 @@
 
 
 
-
-
-
     </div>
 
-
-
-
-
+    <!-- <script src="../JS/bootstrap.bundle.min.js"></script> -->
+    <script>
+    var index = 0;
+    show_image(index)
+    function show_image(i) {
+        index += i;
+        var client = document.getElementsByClassName("client");
+        var dot = document.getElementsByClassName("dot");
+        for (i = 0; i < client.length; i++)
+            client[i].style.display = "none";
+        for (i = 0; i < dot.length; i++)
+            dot[i].className = dot[i].className.replace(" active", "");
+        if (index > client.length - 1)
+            index = 0;
+        if (index < 0)
+            index = client.length - 1;
+        client[index].style.display = "flex";
+        dot[index].classList.add("active")
+    }
+    </script>
 </body>
-
 </html>
