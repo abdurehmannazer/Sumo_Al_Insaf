@@ -34,7 +34,7 @@ body {
 
 /* -----------------------------------------------------------------شريط العناوين الرئيسية وصفحة الاستقبال */
 .nav-bar {
-    background-image: url(../images/background2.jpeg);
+    background-image: url("/Sumo_Al_Insaf/images/background2.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
